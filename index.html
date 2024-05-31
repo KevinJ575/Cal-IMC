@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <nav>
+          <ul>
+            <li><h1>Calculadora IMC</h1></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="main-content">
+          <h2>Calculadora de Índice de Masa Corporal (IMC)</h2>
+          <p>
+            El Índice de Masa Corporal (IMC) es una medida de asociación entre
+            el peso y la talla de una persona. El IMC es usado como uno de
+            varios indicadores para evaluar el estado nutricional.
+          </p>
+          <p>
+            El IMC constituye la medida poblacional más útil del sobrepeso y la
+            obesidad, pues la forma de calcularlo no varía en función del sexo
+            ni de la edad en la población adulta. No obstante, debe considerarse
+            como una guía aproximativa, pues puede no corresponder al mismo
+            grado de gordura en diferentes individuos.
+          </p>
+
+          <h2>¿Cómo se mide el IMC?</h2>
+          <p>
+            La fórmula del IMC es el peso en kilogramos dividido por el cuadrado
+            de la altura en metros (kg/m²). El IMC es una indicación simple de
+            la relación entre el peso y la talla que se utiliza frecuentemente
+            para identificar el sobrepeso y la obesidad en los adultos, tanto a
+            nivel individual como poblacional.
+          </p>
+          <h2>Recomendaciones</h2>
+          <div class="recommendations">
+            <div class="recommendation-item">
+              <figure>
+                <a
+                  href="https://www.gob.mx/salud/articulos/el-sueno-esencial-para-el-buen-funcionamiento-del-organismo?idiom"
+                >
+                  <img src="img/dormir.jpg" alt="" />
+                  <figcaption><em>Dormir BIEN</em></figcaption>
+                </a>
+              </figure>
+            </div>
+
+            <div class="recommendation-item">
+              <figure>
+                <a
+                  href="https://www.gob.mx/salud/articulos/por-que-realizar-actividad-fisica"
+                >
+                  <img src="img/aplicaciones-deporte.jpg" alt="" />
+                  <figcaption><em>Hacer Ejercicio</em></figcaption>
+                </a>
+              </figure>
+            </div>
+
+            <div class="recommendation-item">
+              <figure>
+                <a
+                  href="https://www.gob.mx/siap/articulos/el-plato-del-bien-comer"
+                >
+                  <img src="img/food.jpg" alt="" />
+                  <figcaption><em>Comer BIEN</em></figcaption>
+                </a>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <aside>
+          <div class="calculator">
+            <h2>Calcular IMC</h2>
+            <div class="gender">
+              <label>
+                <input type="radio" name="gender" value="masculino" checked />
+                <img src="img/male_25354.png" alt="Masculino" width="45" />
+                Masculino
+              </label>
+              <label>
+                <input type="radio" name="gender" value="femenino" />
+                <img src="img/mujer.png" alt="Femenino" width="50" />
+                Femenino
+              </label>
+            </div>
+            <div class="input-group">
+              <label for="peso">Peso (Kg)</label>
+              <input
+                type="number"
+                id="peso"
+                name="peso"
+                min="0"
+                step="0.1"
+                value="30"
+              />
+            </div>
+            <div class="input-group">
+              <label for="altura">Altura (Cm)</label>
+              <input
+                type="number"
+                id="altura"
+                name="altura"
+                min="0"
+                step="0.1"
+                value="130"
+              />
+            </div>
+            <button onclick="calcularIMC()">Calcular IMC</button>
+          </div>
+          <div class="bmi-result" id="bmi-result">
+            <div class="bmi-scale">
+              <div class="division bajo-peso"></div>
+              <div class="division saludable"></div>
+              <div class="division sobrepeso"></div>
+              <div class="division obesidad"></div>
+              <div class="bmi-indicator" id="bmi-indicator">
+                <span id="bmi-value">IMC:</span>
+                <div class="arrow-down"></div>
+              </div>
+            </div>
+            <div class="bmi-labels">
+              <span>Bajo peso</span>
+              <span>Saludable</span>
+              <span>Sobrepeso</span>
+              <span>Obesidad</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

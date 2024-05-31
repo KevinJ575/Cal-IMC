@@ -1,0 +1,382 @@
+@media screen and (min-width: 769px) {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    p {
+      text-align: justify;
+    }
+  
+    .header-container {
+      background-color: #40a2e3;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      text-decoration: double;
+    }
+  
+    .header-container nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+  
+    .header-container nav ul li h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .container {
+      display: flex;
+      padding: 50px;
+      background-color: #fcf6ee;
+    }
+  
+    aside {
+      width: auto;
+      background-color: #0d9276;
+      padding: 30px;
+      border-radius: 10px;
+    }
+  
+    aside h2 {
+      margin-top: 0;
+      text-align: center;
+      color: white;
+    }
+  
+    .main-content {
+      width: 75%;
+      margin-right: 20px;
+    }
+  
+    .main-content h2 {
+      color: #0d9276;
+    }
+  
+    .recommendations {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  
+    .recommendation-item {
+      text-align: center;
+      flex: 1;
+    }
+  
+    .recommendation-item a {
+      color: black;
+      text-decoration: none;
+    }
+  
+    .recommendation-item img {
+      height: 250px;
+  
+      width: 250px;
+  
+      object-fit: cover;
+    }
+  
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .calculator .gender {
+      display: flex;
+      margin-bottom: 20px;
+    }
+  
+    .calculator .gender label {
+      margin-right: 20px;
+      text-align: center;
+    }
+  
+    .calculator .input-group {
+      margin-bottom: 15px;
+    }
+  
+    .calculator .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .calculator .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .calculator button {
+      background-color: #99cc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .bmi-result {
+      margin-top: 70px;
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+    }
+  
+    .bmi-scale {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      background: linear-gradient(to right, #ffcc00, #66cc33, #00cc99, #00ccff);
+      padding: 10px;
+      border-radius: 15px;
+      height: 20px;
+      width: 100%;
+    }
+  
+    .bmi-scale .division {
+      flex: 1;
+      height: 100%;
+      border-right: 1px solid white;
+    }
+  
+    .bmi-scale .division:last-child {
+      border-right: none;
+    }
+  
+    .bmi-indicator {
+      position: absolute;
+      top: -25px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid red;
+    }
+  
+    .bmi-indicator span {
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      width: 50px;
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 10px;
+    }
+  
+    .bmi-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  
+    .bmi-labels span {
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+  
+    p {
+      text-align: justify;
+    }
+  
+    .header-container {
+      background-color: #40a2e3;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+  
+    .header-container nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+  
+    .header-container nav ul li h1 {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: #fcf6ee;
+    }
+  
+    main {
+      flex-grow: 1;
+    }
+  
+    .main-content {
+      margin-right: 20px;
+    }
+    .main-content h2 {
+      color: #0d9276;
+    }
+  
+  
+    .recommendations {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+  
+    .recommendation-item {
+      text-align: center;
+      flex-basis: calc(33.333% - 20px);
+      margin-bottom: 20px;
+    }
+  
+    .recommendation-item a {
+      color: black;
+      text-decoration: none;
+  }
+  
+    .recommendation-item img {
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+    }
+  
+    .calculator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    .calculator .gender {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+  
+    .calculator .gender label {
+      margin-right: 20px;
+    }
+  
+    .calculator .input-group {
+      margin-bottom: 15px;
+    }
+  
+    .calculator .input-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  
+    .calculator .input-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    .calculator button {
+      background-color: #99cc00;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .bmi-result {
+      margin-top: 70px;
+      position: relative;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .bmi-scale {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      background: linear-gradient(to right, #ffcc00, #66cc33, #00cc99, #00ccff);
+      padding: 10px;
+      border-radius: 15px;
+      height: 20px;
+    }
+  
+    .bmi-scale .division {
+      flex: 1;
+      height: 100%;
+      border-right: 1px solid white;
+    }
+  
+    .bmi-scale .division:last-child {
+      border-right: none;
+    }
+  
+    .bmi-indicator {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid red;
+    }
+  
+    .bmi-indicator span {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 10px;
+    }
+  
+    .bmi-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 15px;
+    }
+  
+    .bmi-labels span {
+      flex: 1;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  
